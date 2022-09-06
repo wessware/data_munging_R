@@ -42,7 +42,12 @@ raw_data$tripduration <- as.integer(raw_data$tripduration)
 str(raw_data$tripduration)
 ```
 
-
+```{r}
+tester <- 60*(raw_data$end_time - raw_data$start_time)
+```
+```{r}
+tester[0:10]
+```
 
 
 

@@ -428,6 +428,14 @@ pre code {
 ##  $ usertype         : chr  &quot;Subscriber&quot; &quot;Subscriber&quot; &quot;Subscriber&quot; &quot;Subscriber&quot; ...
 ##  $ gender           : chr  &quot;Male&quot; &quot;Female&quot; &quot;Female&quot; &quot;Male&quot; ...
 ##  $ birthyear        : int  1989 1990 1994 1993 1994 1983 1984 1990 1995 1996 ...</code></pre>
+<pre class="r"><code>raw_data$tripduration &lt;- as.integer(raw_data$tripduration)</code></pre>
+<pre><code>## Warning: NAs introduced by coercion</code></pre>
+<pre class="r"><code>str(raw_data$tripduration)</code></pre>
+<pre><code>##  int [1:365069] 390 441 829 NA 364 216 177 100 NA 336 ...</code></pre>
+<pre class="r"><code>tester &lt;- 60*(raw_data$end_time - raw_data$start_time)</code></pre>
+<pre class="r"><code>tester[0:10]</code></pre>
+<pre><code>## Time differences in mins
+##  [1]  390  441  829 1783  364  216  177  100 1727  336</code></pre>
 
 
 
