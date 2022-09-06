@@ -32,6 +32,9 @@ str(raw_data$start_time)
 print("as.Date()")
 str(tester)
 ```
+```{r}
+str(raw_data)
+```
 
 
 
