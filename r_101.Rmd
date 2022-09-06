@@ -23,6 +23,17 @@ raw_data$start_time <- as.POSIXlt(raw_data$start_time)
 raw_data$end_time <- as.POSIXlt(raw_data$end_time)
 ```
 
+```{r}
+print("POSIXlt()")
+str(raw_data$start_time)
+```
+
+```{r}
+print("as.Date()")
+str(tester)
+```
+
+
 
 
 
