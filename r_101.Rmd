@@ -1,0 +1,21 @@
+
+
+```{r}
+raw_data <- read.csv('C:\\Users\\WESSWARE\\Documents\\PROJECTS\\R_munging_101\\Divvy_Trips_2019_Q1.csv')
+```
+```{r}
+head(raw_data)
+```
+```{r}
+str(raw_data)
+```
+```{r}
+tester <- raw_data$start_time
+```
+```{r}
+tester <- as.Date(tester)
+```
+```{r}
+raw_data 
+```
+
