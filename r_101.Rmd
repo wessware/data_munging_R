@@ -37,6 +37,10 @@ str(raw_data)
 ```
 
 
+```{r}
+raw_data$tripduration <- as.integer(raw_data$tripduration)
+str(raw_data$tripduration)
+```
 
 
 
